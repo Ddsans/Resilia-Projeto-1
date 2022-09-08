@@ -11,54 +11,80 @@
     
     <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
 
     
 </head>
 
 <body>
-    <header>
-        <h1>David dos Santos</h1>
-
-        <nav>
-            <a class="link" href="">Github</a>
-            <a class="link" href="">Linkedin</a>
-        </nav>
-
+    <div class="page">
         
+        <header>
+            <div class="header-img">
+                <h1>David dos Santos</h1>
+            
+                <nav>
+                    <a class="link" href="#about">Resumo</a>
+                    <a class="link" href="#hobbie">Hobbie e interesses</a>
+                    <a class="link" href="#info">Formulário</a>
+                </nav>
+            </div>
+        </header>
+        
+        
+        <main>
+            <div class="pg-1">
+                <h2 id="about">SOBRE MIM</h2>
+                <p>Meu nome é David, sou geólogo e técnico em edificações. Busco evoluir na programação, uma área que me encanta, e sonho em ser um grande desenvolvedor futuramente.</p>
+            </div>
 
-    </header>
+            <div class="pg2">
+                <h2 id="hobbie">HOBBIE E INTERESSES</h2>
+                <ul>
+                    <li>Cinema</li>
+                    <li>Correr</li>
+                    <li>Jogos de tabuleiro e eletrônicos</li>
+                    <li>Viajar</li>
+                    <li>Música</li>
+                </ul>
+            </div>
 
 
-    <main>
-        <div class="cont-1">
-            <img class="gif" src="./img/bobesponja.gif" alt="cool">
+            <form id="form-contact" method="post">
+                <div class="fieldset-wrapper">
+                    <legend id="info">INFORMAÇÕES PARA CONTATO</legend>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="" id="name">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="e-mail">E-mail:</label>
+                    <input type="email" name="" id="e-mail">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" ></textarea>
+                </div>
+
+                <input class="button" type="submit" form="form-contact" value="Enviar">
+
+            </form>
     
-            <p class="sobre-mim">Olá! Este é o meu portfólio.</p>
-
-        </div>
-
-            <ul>
-                <li>
-                    <p class="item">Desenvolvedor Web</p>
-                </li>
-                <li>
-                    <p class="item">UFC - Geologia</p>
-                </li>
-                <li>
-                    <p class="item">Rockeseat - Fullstack</p>
-                </li>
-            </ul>
         
+        </main>
+        
+        
+        <footer>
+            <div class="d2">
+                <p>@Desenvolvido por David</p>
+            </div>
+        </footer>
 
-    </main>
-
-
-    <footer>
-        <div class="d2">
-            <p>@Desenvolvido por David</p>
-        </div>
-    </footer>
+    </div>
 
 </body>
 </html>
